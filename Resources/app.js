@@ -23,6 +23,7 @@ var label2 = Ti.UI.createLabel({
 	text:'Win2',
 });
 win2.add(label2);
+win2.add(makeTabBar());
 win2.hideTabBar();
 
 var tab2 = Ti.UI.createTab({
