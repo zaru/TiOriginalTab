@@ -1,18 +1,18 @@
 var tabGroup = Ti.UI.createTabGroup();
 
-var win = Ti.UI.createWindow({
+var win1 = Ti.UI.createWindow({
 	backgroundColor:'#fff'
 });
-var label = Ti.UI.createLabel({
+var label1 = Ti.UI.createLabel({
 	text:'Win1',
 });
-win.add(label);
-win.hideTabBar();
+win1.add(label1);
+win1.hideTabBar();
 
-var tab = Ti.UI.createTab({
+var tab1 = Ti.UI.createTab({
 	title:'test',
-	window:win
+	window:win1
 });
-tabGroup.addTab(tab);
+tabGroup.addTab(tab1);
 
 tabGroup.open();
