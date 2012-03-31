@@ -7,6 +7,7 @@ var label1 = Ti.UI.createLabel({
 	text:'Win1',
 });
 win1.add(label1);
+win1.add(makeTabBar());
 win1.hideTabBar();
 
 var tab1 = Ti.UI.createTab({
@@ -31,3 +32,20 @@ var tab2 = Ti.UI.createTab({
 tabGroup.addTab(tab2);
 
 tabGroup.open();
+
+function makeTabBar(){
+	var view = Ti.UI.createView({
+		width:320,
+		height:44,
+		bottom:0,
+		backgroundColor:'#000',
+	});
+	
+	var icon1 = Ti.UI.createButton({
+		title:'Tab1',
+	});
+	
+	view.add(icon1);
+	
+	return view;
+}
