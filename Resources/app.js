@@ -43,9 +43,18 @@ function makeTabBar(){
 	
 	var icon1 = Ti.UI.createButton({
 		title:'Tab1',
+		width:60,
+		left:0,
+	});
+	
+	var icon2 = Ti.UI.createButton({
+		title:'Tab2',
+		width:60,
+		left:70,
 	});
 	
 	view.add(icon1);
+	view.add(icon2);
 	
 	return view;
 }
