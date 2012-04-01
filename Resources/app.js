@@ -47,11 +47,17 @@ function makeTabBar(){
 		width:60,
 		left:0,
 	});
+	icon1.addEventListener('click',function(){
+		tabGroup.activeTab = 0;
+	});
 	
 	var icon2 = Ti.UI.createButton({
 		title:'Tab2',
 		width:60,
 		left:70,
+	});
+	icon2.addEventListener('click',function(){
+		tabGroup.activeTab = 1;
 	});
 	
 	view.add(icon1);
